@@ -11,6 +11,8 @@ import { FaShippingFast, FaFortAwesome } from "react-icons/fa";
 import { ImCogs } from "react-icons/im";
 import { FiLogOut } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
+import {FcIdea} from 'react-icons/fc'
+import {FaThinkPeaks} from 'react-icons/fa'
 function Tab() {
   const navigate = useNavigate();
   const navigateSales = () => {
@@ -25,6 +27,12 @@ function Tab() {
   const marketing = () => {
     navigate("/websitelogin");
   };
+  const bi = () => {
+    navigate("/ai");
+  };
+  const before = () => {
+    navigate('/before')
+  }
   return (
     <div className=" w-1/5 h-screen bg-white">
       <div className=" pt-10 flex items-center justify-center ">
@@ -100,20 +108,22 @@ function Tab() {
         <div className="  flex flex-col mt-5 px-10 text-black">
           <div className=" rounded-md flex flex-col  items-start justify-center  h-12  hover:bg-gray-200">
             <Button
-              startIcon={<GiReceiveMoney />}
+              onClick={bi}
+              startIcon={<FcIdea/>}
               variant=""
-              sx={{ textTransform: "lowercase" }}
+              sx={{ textTransform: "lowercase", width: "200px" }}
             >
-              payment
+              Business Intelligence
             </Button>
           </div>
-          <div className=" rounded-md flex flex-col  items-start h-12 justify-center hover:bg-gray-200">
-            <Button
-              startIcon={<Inventory2OutlinedIcon />}
+
+          <div className=" rounded-md flex flex-col  items-start h-12 justify-center  hover:bg-gray-200">
+            <Button onClick={before}
+              startIcon={<FaThinkPeaks />}
               variant=""
               sx={{ textTransform: "lowercase" }}
             >
-              orders
+              Before Business
             </Button>
           </div>
           <div className=" rounded-md flex flex-col  items-start h-12 justify-center  hover:bg-gray-200">
@@ -122,7 +132,7 @@ function Tab() {
               variant=""
               sx={{ textTransform: "lowercase" }}
             >
-              social media
+              Real estate
             </Button>
           </div>
           <hr className=" border-black" />
