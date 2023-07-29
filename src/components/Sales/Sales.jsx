@@ -85,7 +85,7 @@ function Sales() {
     }
   };
   return (
-    <div className="w-full h-screen flex bg-gray-200">
+    <div className="w-full h-screen flex bg-gray-100">
       <Tab />
       <div className=" w-full px-5 h-screen">
         <div className="w-full flex justify-between pt-8 pb-5">
@@ -132,7 +132,7 @@ function Sales() {
               </div>
             </div>
           </div>
-          <hr className=" mx-auto border border-1 border-gray-300 w-[1130px] mt-2" />
+          <hr className=" mx-auto  border-black w-[1130px] mt-2" />
           <div className=" mt-4">
             <h1 className=" text-2xl">Customer Details</h1>
           </div>
@@ -172,7 +172,7 @@ function Sales() {
               </Grid>
             </Grid>
           </div>
-          <hr className=" mt-5 border border-1 border-gray-300 " />
+          <hr className=" mt-5 border-black " />
           <div className=" mt-5 text-sm flex w-full justify-center">
             <div className=" rounded-3xl">
               <table className="" style={{ borderRadius: "20px" }}>
@@ -271,7 +271,7 @@ function Sales() {
               </div>
             </div>
             <div className=" flex flex-col gap-1 text-sm">
-              <h1 className=" text-sm flex gap-2">Total amount: 17500</h1>j
+              <h1 className=" text-sm flex gap-2">Total amount: 17500</h1>
               <h1 className=" flex justify-end">Bill Discount : 3</h1>
             </div>
           </div>
@@ -303,7 +303,7 @@ function Sales() {
               <h1>8900</h1>
             </div>
           </div>
-          <hr className=" mt-5 border border-gray-300" />
+        <hr className=" mt-5 border-black" />
           <div className=" flex items-center justify-between px-12 mt-5">
             <div className=" w-32 h-7 bg-orange-500 rounded-md text-sm text-white flex items-center justify-center">
               Sales History

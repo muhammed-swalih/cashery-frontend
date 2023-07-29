@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Tab from "../sideTab/Tab";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { SlCalender } from "react-icons/sl";
@@ -18,7 +18,12 @@ import posterthree from "../../assets/marketing assets/posterthree.webp";
 import posterfour from "../../assets/marketing assets/posterfour.webp";
 import loading from "../../assets/marketing assets/loading.png";
 import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 function Marketing() {
+
+  const { id } = useParams();
+  console.log(id);
+  const [is, setIs] = useState(id);
   const navigate = useNavigate();
   const handlePosterone = () => {
     navigate("/posterone");
@@ -38,7 +43,7 @@ function Marketing() {
   return (
     <div className=" w-full flex">
       <Tab />
-      <div className=" w-full px-5 h-screen">
+      <div className=" w-full px-5 h-screen bg-gray-100">
         <div className="w-full flex justify-between pt-8 pb-5">
           <h1 className=" text-4xl font-semibold">Digital Marketing</h1>
           <div className="flex gap-4">
@@ -161,7 +166,7 @@ function Marketing() {
                   </div>
                 </div>
               </div>
-              <div className=" mt-5 w-full h-60  bg-[#DCDCDC] flex justify-center items-center box-border px-2 py-2 rounded-lg gap-1">
+              {id == "true"? <div className=" mt-5 w-full h-60  bg-[#DCDCDC] flex justify-center items-center box-border px-2 py-2 rounded-lg gap-1">
                 <div className=" flex flex-col w-48  h-full rounded-lg px-1 py-1 border-r border-1 border-black">
                   <div
                     onClick={handlePosterone}
@@ -302,7 +307,11 @@ function Marketing() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> : (
+                <div className=" w-full h-44 flex items-center justify-center">
+                    <div onClick={()=> navigate('/marketinghome') } className=" w-auto px-3 h-12 bg-blue-500 flex items-center text-white justify-center rounded-lg shadow-lg">connect Social Media</div>
+                </div>
+              )}
             </div>
             <div className=" w-1/4 flex h-full flex-col gap-5">
               <div className="h-48 w-full bg-[#C2C2C2] rounded-3xl px-5 py-5">

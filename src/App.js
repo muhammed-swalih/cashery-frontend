@@ -13,6 +13,13 @@ import PosterOnePage from './pages/PosterOnePage';
 import PosterTwo from './components/posterPopUps/PosterTwo';
 import PosterThree from './components/posterPopUps/PosterThree';
 import PosterFour from './components/posterPopUps/PosterFour';
+import BiPage from './pages/BiPage';
+import AiCoaching from './components/BI/AiCoaching';
+import Dashboard from './components/Dashboard/Dashboard';
+import WebsiteLogin from './components/WebsiteGeneration/WebsiteLogin';
+import Generating from './components/WebsiteGeneration/Generating';
+import Ready from './components/WebsiteGeneration/Ready';
+import MarketingHome from './components/DigitalMarketing/MarketingHome';
 function App() {
   return (
     <div className="App">
@@ -22,7 +29,7 @@ function App() {
           <Route path='/profile' element={<ProfilePage/>}/>
           <Route path='/sidetab' element={<TabPage/>}/>
           <Route path='/sales' element={<SalesPage/>}/>
-          <Route path='/marketing' element={<MarketingPage/>}/>
+          <Route path='/marketing/:id' element={<MarketingPage/>}/>
           <Route path='/financial' element={<FinancialPage/>}/>
           <Route path='/purchase' element={<PurchasePage/>}/>
           <Route path='/inventory' element={<InventoryPage/>}/>
@@ -30,6 +37,14 @@ function App() {
           <Route path='/postertwo' element={<PosterTwo/>}/>
           <Route path='/posterthree' element={<PosterThree/>}/>
           <Route path='/posterfour' element={<PosterFour/>}/>
+          <Route path='/bi' element={<BiPage/>}/>
+          <Route path='/ai' element={<AiCoaching/>}/>
+          <Route path='/dashboard' element={<Dashboard/>}/>
+          <Route path='/websitelogin' element={<WebsiteLogin/>}/>
+          <Route path='/generatingwebsite' element={<Generating/>}/>
+          <Route path='/ready' element={<Ready/>}/>
+          <Route path='/marketinghome' element={<MarketingHome/>}/>
+
         </Routes>
       </BrowserRouter>
 

@@ -88,7 +88,7 @@ function Purchase() {
   };
   return (
     <div>
-      <div className="w-full h-screen flex bg-gray-200">
+      <div className="w-full h-screen flex bg-gray-100">
         <Tab />
         <div className=" w-full px-5 h-screen">
           <div className="w-full flex justify-between pt-8 pb-5">
