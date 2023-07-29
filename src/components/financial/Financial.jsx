@@ -10,7 +10,7 @@ function Financial() {
   return (
     <div className=" w-full flex ">
       <Tab />
-      <div className=" w-full px-5 h-screen bg-gray-100">
+      <div className=" w-4/5 px-5 h-screen bg-gray-100">
         <div className="w-full flex justify-between pt-8 pb-5">
           <h1 className=" text-4xl font-semibold">Financial</h1>
           <div className="flex gap-4">

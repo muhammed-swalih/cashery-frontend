@@ -6,7 +6,7 @@ function PosterThree() {
     <div>
       <div className=" flex ">
         <Tab />
-        <div className=" w-full px-5 bg-gray-300 h-screen">
+        <div className=" w-4/5 px-5 bg-gray-300 h-screen">
           <div className=" flex w-full h-full items-center justify-center">
             <div className=" w-5/6 h-4/5 bg-black rounded-2xl flex">
               <div className=" w-2/3 h-full bg-gray-400">

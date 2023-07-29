@@ -18,7 +18,7 @@ function Perfomance() {
     <div className=" w-full h-screen bg-gray-100">
       <div className=" w-full h-full flex">
         <Tab />
-        <div className=" w-full h-full bg-gray-100 px-5 py-5">
+        <div className=" w-4/5 h-full bg-gray-100 px-5 py-5">
           <div className="w-full flex justify-between ">
             <h1 className=" text-4xl font-semibold">Product perfomance</h1>
             <div className="flex gap-4">

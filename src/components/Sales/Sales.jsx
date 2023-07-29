@@ -87,7 +87,7 @@ function Sales() {
   return (
     <div className="w-full h-screen flex bg-gray-100">
       <Tab />
-      <div className=" w-full px-5 h-screen">
+      <div className=" w-4/5 px-5 h-screen">
         <div className="w-full flex justify-between pt-8 pb-5">
           <h1 className=" text-4xl font-semibold">Sales</h1>
           <div className="flex gap-4">
@@ -132,7 +132,7 @@ function Sales() {
               </div>
             </div>
           </div>
-          <hr className=" mx-auto  border-black w-[1130px] mt-2" />
+          <hr className=" border-black mt-2" />
           <div className=" mt-4">
             <h1 className=" text-2xl">Customer Details</h1>
           </div>

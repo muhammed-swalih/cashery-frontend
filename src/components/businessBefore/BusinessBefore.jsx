@@ -25,7 +25,7 @@ function BusinessBefore() {
     <div>
       <div className=" w-full h-auto flex">
         <Tab />
-        <div className=" w-full h-auto bg-gray-100 px-5">
+        <div className=" w-4/5 h-auto bg-gray-100 px-5">
           <div className="w-full flex justify-between pt-8 pb-5">
             <h1 className=" text-4xl font-semibold">Business</h1>
             <div className="flex gap-4">

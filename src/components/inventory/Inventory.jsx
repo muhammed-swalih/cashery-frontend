@@ -90,7 +90,7 @@ function Inventory() {
     <div>
       <div className="w-full h-screen flex bg-gray-200">
         <Tab />
-        <div className=" w-full px-5 h-screen">
+        <div className=" w-4/5 px-5 h-screen">
           <div className="w-full flex justify-between pt-8 pb-5">
             <h1 className=" text-4xl font-semibold">Inventory</h1>
             <div className="flex gap-4">

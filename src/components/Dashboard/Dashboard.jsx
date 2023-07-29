@@ -20,7 +20,7 @@ function Dashboard() {
     <div className="">
       <div className=" w-full h-screen flex ">
         <Tab />
-        <div className=" w-full h-screen bg-gray-100 px-5 pt-5">
+        <div className=" w-4/5 h-screen bg-gray-100 px-5 pt-5">
           <div className="w-full flex justify-between pb-5">
             <h1 className=" text-4xl font-semibold">Sales</h1>
             <div className="flex gap-4">
